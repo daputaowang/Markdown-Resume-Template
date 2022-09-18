@@ -1,25 +1,24 @@
  <center>
-     <h1>XXX</h1>
+     <h1>郭超</h1>
+     <h3>18220052953 | Guochao_net@163.com | 深圳</h3>
  </center>
 
-## 个人信息 
-
-* 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;年 龄：25  
-* 手 机：134XXXX3216 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;  邮 箱：XXXXX@XXX.com    
-* 专 业：计算机科学与计算 &emsp;&emsp;&emsp;&emsp;&emsp; 岗 位：研发工程师
-
-## 工作及教育经历
-
-* 前公司&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;2019.8~至今&emsp;&emsp;&emsp;&emsp;&emsp; 事业群名字-部门名字       
-* XXXX大学&emsp;&emsp;&emsp;&emsp;&emsp;2017.9~2019.7&emsp;&emsp;&emsp;&emsp; 计算机科学与技术专业-研究生         
-* XXXX大学&emsp;&emsp;&emsp;&emsp;&emsp;2013.9~2017.7&emsp;&emsp;&emsp;&emsp; 计算机科学与技术专业-本科  
+## 教育经历
+***
+西安邮电大学大学 计算机学院 网络工程专业 本科&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;2015年 - 2019年  
 
 ## 专业技能
 
-* 熟练使用 C++，掌握Go，了解 Java、Python、PHP 等编程语言
-* 掌握基础数据结构和算法的基本原理
-* 等等
-
+* 扎实的Go语言基础，熟悉Go语言底层设计原理，包括调度模型GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其他数据结构、Defer等，熟悉Gin等web开发组件
+* 熟悉计算机网络，熟悉OSI参考模型、IP、TCP、HTTP(HTTPS)等，了解DNS、ARP、NAT等
+* 熟悉网络编程、IO多路复用
+* 熟悉Mysql，了解索引、事务、日志系统
+* 熟悉Redis，熟悉事件循环机制、哨兵底层原理，熟悉基本数据结构
+* 熟悉Linux，能编写Shell脚本，了解Linux下常用命令与工具，了解Git
+* 熟悉常见的数据结构与算法，了解计算机组成原理、操作系统
+* 了解Python语言、C语言
+* 了解nginx、lvs、keepalived
+* 了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC
 ## 项目经历
 
 1. 公司/学校 - XXweb服务器 - 独立开发 - 201508- 201512 
@@ -55,19 +54,4 @@
 
 也欢迎与我交流，备注：「个人简单介绍」 + 交流，围观朋友圈，做点赞之交（备注没有自我介绍不通过哦）
 
-<a name="微信"></a>
-<img src="https://img-blog.csdnimg.cn/20200814140330894.png" data-img="1" width="175" height="175">
-
-# 公众号
-
-更多精彩文章持续更新，微信搜索：「代码随想录」第一时间围观，关注后回复：「666」可以获得所有算法专题原创PDF。
-
-
-**「代码随想录」每天准时为你推送一篇经典面试题目，帮你梳理算法知识体系，轻松学习算法！**，并且公众号里有大量学习资源，也有我自己的学习心得和方法总结，更有上万录友们在这里打卡学习。
-
-**来看看就知道了，你会发现相见恨晚！**
-
-<a name="公众号"></a>
-
-![](https://github.com/youngyangyang04/leetcode-master/blob/master/pics/%E5%85%AC%E4%BC%97%E5%8F%B7.png)
 
