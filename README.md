@@ -1,14 +1,17 @@
  <center>
      <h1>郭超</h1>
-     <h3>18220052953 | Guochao_net@163.com | 深圳</h3>
+     <h3>18220052953 | Guochao_net@163.com | 深圳 | 26</h3>
  </center>
 
-## 教育经历
+>## **工作及教育经历**
 ***
-西安邮电大学大学 计算机学院 网络工程专业 本科&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;2015年 - 2019年  
+**金蝶天燕云计算服份有限公司&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2019.07~至今&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;中间件产品部**
++ 荣誉和奖励：金蝶天燕十佳员工(优秀新人)、金蝶集团微创新奖(3%)、金蝶集团发明专利奖两项
 
-## 专业技能
-
+**西安邮电大学&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2015.09~2019.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;网络工程专业-本科**
++ 荣誉和奖励：国家奖学金(专业第一)、国家励志奖学金(专业第二)、优秀班干部等
+>## **专业技能**
+***
 * 扎实的Go语言基础，熟悉Go语言底层设计原理，包括调度模型GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其他数据结构、Defer等，熟悉Gin等web开发组件
 * 熟悉计算机网络，熟悉OSI参考模型、IP、TCP、HTTP(HTTPS)等，了解DNS、ARP、NAT等
 * 熟悉网络编程、IO多路复用
@@ -19,13 +22,18 @@
 * 了解Python语言、C语言
 * 了解nginx、lvs、keepalived
 * 了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC
-## 项目经历
-
-1. 公司/学校 - XXweb服务器 - 独立开发 - 201508- 201512 
+>## **项目经历**
+***
+ &emsp;&emsp;多个项目有多个阶段，所以时间上有重叠
++ **金蝶天燕内存数据缓存&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**
     * 具体功能 
     * 运用了那些技术，技术难点是
     * 效果如何
     * demo演示地址，github地址 
++ **金蝶天燕负载均衡器多实例管控台&emsp;&emsp;&emsp;2022.05~2022.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端独立设计及开发**
++ **金蝶天燕负载均衡器&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.01~2022.03&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**
++ **金蝶天燕数据服务&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020.09~2020.12&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端独立设计及开发**
++ **金蝶天燕数据智脑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2019.07~2020.08&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**
 
 2. 公司/学校 - XX游戏 - 负责后端开发 - 201309- 201401 
     * 具体功能 
@@ -33,25 +41,7 @@
     * 效果如何
     * demo演示地址，github地址 
 
-## 获奖经历
-* XXX 优秀新人
-* XXX 学生社团优秀干部
-* 竞赛 XXX 奖
 
-## 个人账号 
-* blog 地址 (附加自己博客特色，写了哪些技术文章)
-* github 地址 (附加自己github特色，突出的项目)
-
-## 其他信息 
-* 喜欢钻研技术 等等
-* 性格开朗，喜欢跳舞，做个主持人 等等 
-
-> 简历的word版本，可以在我的公众号[代码随想录](https://img-blog.csdnimg.cn/20200815195519696.png)中，后台回复：简历模板，别可获取
-
-# 关于作者
-
-大家好，我是程序员Carl，哈工大师兄，ACM 校赛、黑龙江省赛、东北四省赛金牌、亚洲区域赛铜牌获得者，先后在腾讯和百度从事分布式技术研发。
-
-也欢迎与我交流，备注：「个人简单介绍」 + 交流，围观朋友圈，做点赞之交（备注没有自我介绍不通过哦）
-
-
+>## **个人总结**
+***
+有一定的技术追求，为搭建从基础到上层的个人知识体系（包括但不限于计算机体系）能长期坚持自我驱动学习。思维活跃，遇见问题可以辩证深入思考、触类旁通。具有一定的团队协作能力、抗压能力。为人正直、善良、和蔼好相处，责任心较强。
