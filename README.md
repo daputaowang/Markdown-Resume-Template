@@ -32,16 +32,21 @@
     * demo演示地址，github地址 
 + **金蝶天燕负载均衡器多实例管控台&emsp;&emsp;&emsp;2022.05~2022.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端独立设计及开发**
 + **金蝶天燕负载均衡器&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.01~2022.03&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**
-+ **金蝶天燕数据服务&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020.09~2020.12&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端独立设计及开发**
-+ **金蝶天燕数据智脑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2019.07~2020.08&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**
 
-2. 公司/学校 - XX游戏 - 负责后端开发 - 201309- 201401 
-    * 具体功能 
-    * 运用了那些技术，技术难点是
-    * 效果如何
-    * demo演示地址，github地址 
-
-
++ **金蝶天燕数据服务&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020.09~2020.12&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端独立设计及开发**  
+&emsp;&emsp;数据服务可以将多源数据库数据通过处理后以RESTful API形式发布为数据API。功能类似于阿里DataWorks的数据服务模块。可以通过向导或SQL的形式创建API，支持SQL where语句中常见的各种操作符以及排序分页等功能。  
+**主要技术**：Python、FastAPI、SQLAlchemy、PostgreSQL  
+**主要负责事项**：此项目后端部分为独立开发，完成了从技术选型预研到需求分析与后端架构设计到功能实现整个过程 
++ **金蝶天燕数据智脑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2019.07~2020.08&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
+&emsp;&emsp;数据智脑是一款支持大数据的数据可视化产品，可以将多源数据经过加载、分析、转换、计算等操作之后，结合丰富的图表组件以数据应用、门户网站、主题大屏等方式展示出来。  
+**主要技术**：Python、Django、SQLAlchemy、Pandas、Spark、Celery、Websocket、MySQL、Redis、Nginx、Docker等  
+**主要负责事项**：  
+&emsp;&emsp;1. 适配异构多源数据库以及数据库元数据管理与数据格式化。引入从SQL语句创建数据集，增加了数据集的灵活性。引入前后端通过websocket辅助通信逻辑，增加了由后端定时定点更新数据大屏的重要功能。  
+&emsp;&emsp;2. 项目整体技术架构演进与优化，对不合理的层次划分重新规划，梳理业务逻辑优化核心功能  
+&emsp;&emsp;3. 引入spark大数据计算平台，完成计算层大数据处理逻辑  
+**工作成果与难点攻关**：  
+&emsp;&emsp; 1. 适配了市面主流的国内外数据库作为数据源，还包括kylin、clickhouse等特殊计算平台。并通过元数据映射的方式，统一了不同数据库的处理过程，极大的加快了新数据库的适配过程。  
+&emsp;&emsp;2. 将业务逻辑中数据源、数据集、数据模型在后端结构中解耦。数据源统一由数据访问层处理。数据集由不同数据库表按照各自方言抽取数据到本地的形式变更为通过元数据生成SQL语句保存的形式，增加了用户数据的安全性降低了后端的复杂性。数据模型由原来的直接对本地数据做处理变更为将SQL作为统一入口，转换为dataframe后处理。
 >## **个人总结**
 ***
-有一定的技术追求，为搭建从基础到上层的个人知识体系（包括但不限于计算机体系）能长期坚持自我驱动学习。思维活跃，遇见问题可以辩证深入思考、触类旁通。具有一定的团队协作能力、抗压能力。为人正直、善良、和蔼好相处，责任心较强。
+有一定的技术追求，为搭建从基础到上层的个人知识体系（包括但不限于计算机体系）能长期坚持自我驱动学习。思维活跃、缜密、逻辑性强，遇见问题可以辩证深入的思考、触类旁通。具有一定的团队协作能力、抗压能力。为人正直、善良、和蔼好相处，责任心较强。
