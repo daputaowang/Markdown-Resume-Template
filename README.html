@@ -1,3 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
 <h1>
 	<center>
 	郭超
@@ -13,61 +380,70 @@
 18220052953 | Guochao_net@163.com | 26
 </center>
 </h3>  
+<h2 id="%E5%B7%A5%E4%BD%9C%E5%8F%8A%E6%95%99%E8%82%B2%E7%BB%8F%E5%8E%86"><strong>工作及教育经历</strong></h2>
+<hr>
+<p><strong>金蝶中国金蝶天燕云计算股份有限公司    2019.07~至今          中间件产品部</strong></p>
+<ul>
+<li>工作描述：负责中间件产品以及BI软件的技术预研、后端设计与开发工作</li>
+<li>荣誉和奖励：金蝶天燕十佳员工(优秀新人)、金蝶集团微创新奖(3%)、金蝶集团发明专利奖两项</li>
+</ul>
+<p><strong>西安邮电大学               2015.09~2019.07        网络工程专业-本科</strong></p>
+<ul>
+<li>主修课程：计算机组成原理、操作系统、计算机网络、Linux、C语言程序设计、Java程序设计等</li>
+<li>荣誉和奖励：国家奖学金(专业第一)、国家励志奖学金(专业第二)、优秀班干部等</li>
+</ul>
+<h2 id="%E4%B8%93%E4%B8%9A%E6%8A%80%E8%83%BD"><strong>专业技能</strong></h2>
+<hr>
+<ul>
+<li>扎实的Go语言基础，熟悉Go语言底层设计原理，包括GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其它数据结构、Defer等。熟悉Gin等web组件</li>
+<li>熟悉计算机网络，熟悉OSI参考模型、IP、TCP、HTTP(HTTPS)等，了解DNS、ARP、NAT等</li>
+<li>熟悉Socket网络编程、IO多路复用</li>
+<li>熟悉Redis核心处理流程，包括EventLoop事件循环机制(EventLoop-&gt;Epoll-&gt;Socket)、命令处理生命周期，了解底层数据类型和常用的数据结构</li>
+<li>熟悉Mysql，了解索引、事务、日志系统</li>
+<li>熟悉Linux，了解Linux下常用命令与工具。了解Git</li>
+<li>熟悉常见的数据结构与算法，了解计算机组成原理、操作系统</li>
+<li>了解Python语言、C语言、Shell语言，了解nginx、lvs、keepalived</li>
+<li>了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE%E7%BB%8F%E5%8E%86"><strong>项目经历</strong></h2>
+<hr>
+<ul>
+<li><strong>金蝶天燕分布式缓存数据库      2021.07~2022.09         后端设计及开发</strong><br>
+  金蝶天燕分布式缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。<br>
+<strong>官网</strong>：https://www.apusic.com/list-338.html   <strong>主要技术</strong>：Go、EventLoop、Epoll、Socket<br>
+<strong>主要负责事项</strong>：<br>
+  1. 参与核心处理流程开发，包括配置初始化、事件循环机制、命令处理过程等。<br>
+  2. 完成哨兵模块的开发，独立完成Benchmark模块的开发。<br>
+<strong>主要工作成果与难点攻关</strong>：<br>
+  1. 深入分析了Redis5.0源码的核心处理流程，因为其涉及到很多操作系统、数据结构和网络编程相关知识所以这个过程需要开发人员具有较好的计算机体系基础知识作为支持。<br>
+  2. 深入探究了Go语言的底层调度模型GPM和内存管理及类型系统等原理，用于支持用Go复现C语言特性、保证产品稳定性、提高产品性能。</li>
+<li><strong>金蝶天燕负载均衡器         2020.08~2021.07         后端设计及开发</strong><br>
+  金蝶天燕负载均衡器是为了国产化信创产业的发展基于APISIX开发的一款流量网关产品。支持x86、arm架构主流国产Linux操作系统下负载均衡器的全自动化离线部署与管理，内置了自动化的高可用高并发集群部署功能，支持多种流量管理场景下插件的定制化开发。<br>
+<strong>官网</strong>：https://www.apusic.com/list-282.html<br>
+<strong>主要技术</strong>：Go、Shell、Lua、Gin、APISIX、Openresty、Nginx、ETCD、LVS、Keepalived等<br>
+<strong>主要负责事项</strong>：<br>
+  1. 产品包多实例管控台的开发，管控台实现了对服务器的管理、产品包的部署启停及状态监控、多节点负载均衡器的流量监控。<br>
+  2. 高可用高并发集群部署方案的研究与自动化。<br>
+  3. 适配x86、arm架构主流国产Linux操作系统，编写离线部署与安装代码与脚本。<br>
+<strong>主要工作成果与难点攻关</strong>：<br>
+  1. 在产品复杂度高且依赖较多基础组件如Openresty、ETCD等的情况下完成在众多异构Linux操作系统下的适配工作。并结合Go与Shell，完成多种复杂情况下的自动化打包及安装部署工作。<br>
+  2. 为方便用户管理大规模的服务器节点，独立完成了多实例管控台的开发工作。并独立完成了基于ETCD、LVS、KeepAlived的高并发高可用方案，且内嵌到安装包中，只需配置集群IP与VIP即可自动完成集群部署，极大的减少了实施人员的工作量。</li>
+<li><strong>金蝶天燕数据智脑          2019.07~2020.08         后端设计及开发</strong><br>
+  数据智脑是一款支持大数据的数据可视化产品，可以将多源数据经过加载、分析、转换、计算等操作之后，结合丰富的图表组件以数据应用、门户网站、主题大屏等方式展示出来。<br>
+<strong>官网</strong>：https://www.apusic.com/list-210.html<br>
+<strong>主要技术</strong>：Python、Django、FastAPI、SQLAlchemy、Pandas、Spark、Celery、Websocket、Redis、Nginx、Docker和各种数据库<br>
+<strong>主要负责事项</strong>：<br>
+  1. 独立预研并适配异构多源数据库以及数据库元数据管理与数据格式化。引入从SQL创建数据集，增加了数据集的灵活性。引入前后端通过websocket辅助通信逻辑，增加了由后端定时定点更新数据大屏的重要功能。<br>
+  2. 项目整体技术架构演进与优化，对不合理的层次划分重新规划，梳理业务逻辑优化核心功能。<br>
+  3. 引入spark大数据计算平台，独立完成计算层大数据处理逻辑。<br>
+  4. 独立完成将多源数据库数据以RESTful API形式发布为数据API，此功能类似于阿里DataWorks的数据服务模块。<br>
+<strong>主要工作成果与难点攻关</strong>：<br>
+   1. 适配了市面主流的国内外数据库作为数据源，还包括kylin、clickhouse等特殊计算平台。并通过元数据映射的方式，统一了不同数据库的处理过程，极大的加快了新数据库的适配过程。<br>
+  2. 将业务逻辑中数据源、数据集、数据模型在后端结构中解耦。数据源统一由数据访问层处理。数据集由不同数据库表按照各自方言抽取数据到本地的形式变更为通过元数据生成SQL语句保存的形式，增加了用户数据的安全性降低了后端的复杂性。数据模型由原来的直接对本地数据做处理变更为将SQL作为统一入口，转换为Dataframe后处理。</li>
+</ul>
+<h2 id="%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93"><strong>个人总结</strong></h2>
+<hr>
+<p>有一定的技术追求，为搭建从基础到上层的个人知识体系（包括但不限于计算机体系）能长期坚持自我驱动学习。思维活跃、缜密、逻辑性强，遇见问题可以辩证深入的思考、触类旁通。具有一定的团队协作能力、抗压能力。为人正直、善良、和蔼好相处，责任心较强。</p>
 
-## **工作及教育经历**
-***
-**金蝶中国金蝶天燕云计算股份有限公司&emsp;&emsp;&emsp;&emsp;2019.07~至今&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;中间件产品部**
-+ 工作描述：负责中间件产品以及BI软件的技术预研、后端设计与开发工作
-+ 荣誉和奖励：金蝶天燕十佳员工(优秀新人)、金蝶集团微创新奖(3%)、金蝶集团发明专利奖两项
-
-**西安邮电大学&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2015.09~2019.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;网络工程专业-本科**  
-+ 主修课程：计算机组成原理、操作系统、计算机网络、Linux、C语言程序设计、Java程序设计等  
-+ 荣誉和奖励：国家奖学金(专业第一)、国家励志奖学金(专业第二)、优秀班干部等
-## **专业技能**
-***
-* 扎实的Go语言基础，熟悉Go语言底层设计原理，包括GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其它数据结构、Defer等。熟悉Gin等web组件
-* 熟悉计算机网络，熟悉OSI参考模型、IP、TCP、HTTP(HTTPS)等，了解DNS、ARP、NAT等
-* 熟悉Socket网络编程、IO多路复用
-* 熟悉Redis核心处理流程，包括EventLoop事件循环机制(EventLoop->Epoll->Socket)、命令处理生命周期，了解底层数据类型和常用的数据结构
-* 熟悉Mysql，了解索引、事务、日志系统
-* 熟悉Linux，了解Linux下常用命令与工具。了解Git
-* 熟悉常见的数据结构与算法，了解计算机组成原理、操作系统
-* 了解Python语言、C语言、Shell语言，了解nginx、lvs、keepalived
-* 了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC
-## **项目经历**
-***
-+ **金蝶天燕分布式缓存数据库&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
-&emsp;&emsp;金蝶天燕分布式缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。  
-**官网**：https://www.apusic.com/list-338.html&emsp;&emsp;&emsp;**主要技术**：Go、EventLoop、Epoll、Socket  
-**主要负责事项**：  
-&emsp;&emsp;1. 参与核心处理流程开发，包括配置初始化、事件循环机制、命令处理过程等。  
-&emsp;&emsp;2. 完成哨兵模块的开发，独立完成Benchmark模块的开发。  
-**主要工作成果与难点攻关**：  
-&emsp;&emsp;1. 深入分析了Redis5.0源码的核心处理流程，因为其涉及到很多操作系统、数据结构和网络编程相关知识所以这个过程需要开发人员具有较好的计算机体系基础知识作为支持。  
-&emsp;&emsp;2. 深入探究了Go语言的底层调度模型GPM和内存管理及类型系统等原理，用于支持用Go复现C语言特性、保证产品稳定性、提高产品性能。
-+ **金蝶天燕负载均衡器&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020.08~2021.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
-&emsp;&emsp;金蝶天燕负载均衡器是为了国产化信创产业的发展基于APISIX开发的一款流量网关产品。支持x86、arm架构主流国产Linux操作系统下负载均衡器的全自动化离线部署与管理，内置了自动化的高可用高并发集群部署功能，支持多种流量管理场景下插件的定制化开发。  
-**官网**：https://www.apusic.com/list-282.html  
-**主要技术**：Go、Shell、Lua、Gin、APISIX、Openresty、Nginx、ETCD、LVS、Keepalived等  
-**主要负责事项**：  
-&emsp;&emsp;1. 产品包多实例管控台的开发，管控台实现了对服务器的管理、产品包的部署启停及状态监控、多节点负载均衡器的流量监控。  
-&emsp;&emsp;2. 高可用高并发集群部署方案的研究与自动化。  
-&emsp;&emsp;3. 适配x86、arm架构主流国产Linux操作系统，编写离线部署与安装代码与脚本。  
-**主要工作成果与难点攻关**：  
-&emsp;&emsp;1. 在产品复杂度高且依赖较多基础组件如Openresty、ETCD等的情况下完成在众多异构Linux操作系统下的适配工作。并结合Go与Shell，完成多种复杂情况下的自动化打包及安装部署工作。  
-&emsp;&emsp;2. 为方便用户管理大规模的服务器节点，独立完成了多实例管控台的开发工作。并独立完成了基于ETCD、LVS、KeepAlived的高并发高可用方案，且内嵌到安装包中，只需配置集群IP与VIP即可自动完成集群部署，极大的减少了实施人员的工作量。 
-+ **金蝶天燕数据智脑&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2019.07~2020.08&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
-&emsp;&emsp;数据智脑是一款支持大数据的数据可视化产品，可以将多源数据经过加载、分析、转换、计算等操作之后，结合丰富的图表组件以数据应用、门户网站、主题大屏等方式展示出来。   
-**官网**：https://www.apusic.com/list-210.html  
-**主要技术**：Python、Django、FastAPI、SQLAlchemy、Pandas、Spark、Celery、Websocket、Redis、Nginx、Docker和各种数据库  
-**主要负责事项**：  
-&emsp;&emsp;1. 独立预研并适配异构多源数据库以及数据库元数据管理与数据格式化。引入从SQL创建数据集，增加了数据集的灵活性。引入前后端通过websocket辅助通信逻辑，增加了由后端定时定点更新数据大屏的重要功能。  
-&emsp;&emsp;2. 项目整体技术架构演进与优化，对不合理的层次划分重新规划，梳理业务逻辑优化核心功能。  
-&emsp;&emsp;3. 引入spark大数据计算平台，独立完成计算层大数据处理逻辑。    
-&emsp;&emsp;4. 独立完成将多源数据库数据以RESTful API形式发布为数据API，此功能类似于阿里DataWorks的数据服务模块。  
-**主要工作成果与难点攻关**：  
-&emsp;&emsp; 1. 适配了市面主流的国内外数据库作为数据源，还包括kylin、clickhouse等特殊计算平台。并通过元数据映射的方式，统一了不同数据库的处理过程，极大的加快了新数据库的适配过程。  
-&emsp;&emsp;2. 将业务逻辑中数据源、数据集、数据模型在后端结构中解耦。数据源统一由数据访问层处理。数据集由不同数据库表按照各自方言抽取数据到本地的形式变更为通过元数据生成SQL语句保存的形式，增加了用户数据的安全性降低了后端的复杂性。数据模型由原来的直接对本地数据做处理变更为将SQL作为统一入口，转换为Dataframe后处理。
-## **个人总结**
-***
-有一定的技术追求，为搭建从基础到上层的个人知识体系（包括但不限于计算机体系）能长期坚持自我驱动学习。思维活跃、缜密、逻辑性强，遇见问题可以辩证深入的思考、触类旁通。具有一定的团队协作能力、抗压能力。为人正直、善良、和蔼好相处，责任心较强。  
+</body>
+</html>
