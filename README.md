@@ -25,11 +25,11 @@
 + 荣誉和奖励：国家奖学金(专业第一)、国家励志奖学金(专业第二)、优秀班干部等
 ## **专业技能**
 ***
-* 扎实的Go语言基础，熟悉Go语言底层设计原理，包括GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其它数据结构、Defer等。熟悉Gin等web组件
+* 掌握Go语言基础，熟悉Go语言底层设计原理，包括GPM、内存管理(堆、函数调用栈、GC)、类型系统(接口、类型断言、Reflect)、Channel、Mutex、Map及其它数据结构。熟悉Gin等web server开发组件
+* 掌握Redis核心处理流程，包括EventLoop事件循环机制(EventLoop->Epoll->Socket)、命令处理生命周期。熟悉事务、发布订阅原理，熟悉底层数据类型和常用的数据结构
 * 熟悉计算机网络，熟悉OSI参考模型、IP、TCP、HTTP(HTTPS)等，了解DNS、ARP、NAT等
 * 熟悉Socket网络编程、IO多路复用
-* 熟悉Redis核心处理流程，包括EventLoop事件循环机制(EventLoop->Epoll->Socket)、命令处理生命周期。熟悉事务、发布订阅原理，了解底层数据类型和常用的数据结构
-* 熟悉Mysql，了解索引、事务、日志系统
+* 熟悉Mysql，熟悉索引、事务、日志系统
 * 熟悉Linux，了解Linux下常用命令与工具。了解Git
 * 熟悉常见的数据结构与算法，了解计算机组成原理、操作系统
 * 了解Python语言、C语言、Shell语言，了解nginx、lvs、keepalived
@@ -41,7 +41,7 @@
 **官网**：https://www.apusic.com/list-338.html&emsp;&emsp;&emsp;**主要技术**：Go、EventLoop、Epoll、Socket  
 **主要负责事项**：  
 &emsp;&emsp;1. 参与核心处理流程开发，包括配置初始化、事件循环机制、命令处理过程等。  
-&emsp;&emsp;2. 完成哨兵模块的开发，独立完成Benchmark模块的开发。  
+&emsp;&emsp;2. 独立完成Benchmark模块的开发。  
 **主要工作成果与难点攻关**：  
 &emsp;&emsp;1. 深入分析了Redis5.0源码的核心处理流程，因为其涉及到很多操作系统、数据结构和网络编程相关知识所以这个过程需要开发人员具有较好的计算机体系基础知识作为支持。  
 &emsp;&emsp;2. 深入探究了Go语言的底层调度模型GPM和内存管理及类型系统等原理，用于支持用Go复现C语言特性、保证产品稳定性、提高产品性能。
