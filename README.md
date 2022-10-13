@@ -36,21 +36,21 @@
 * 了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC
 ## **项目经历**
 ***
-+ **金蝶天燕分布式缓存数据库&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
-&emsp;&emsp;金蝶天燕分布式缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。  
++ **金蝶天燕缓存数据库&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
+&emsp;&emsp;金蝶天燕缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。  
 **官网**：https://www.apusic.com/list-338.html&emsp;&emsp;&emsp;**主要技术**：Go、EventLoop、Epoll、Socket  
 **主要负责事项**：  
-&emsp;&emsp;1. 参与核心处理流程开发，包括配置初始化、事件循环机制、命令处理过程等。  
-&emsp;&emsp;2. 独立完成Benchmark模块的开发。  
+&emsp;&emsp;1. Go语言重构Redis后端架构设计，技术预研与难点攻关。  
+&emsp;&emsp;2. 参与后端系统核心处理流程开发，包括配置初始化、事件循环机制、命令处理过程等。  
 **主要工作成果与难点攻关**：  
-&emsp;&emsp;1. 深入分析了Redis5.0源码的核心处理流程，因为其涉及到很多操作系统、数据结构和网络编程相关知识所以这个过程需要开发人员具有较好的计算机体系基础知识作为支持。  
-&emsp;&emsp;2. 深入探究了Go语言的底层调度模型GPM和内存管理及类型系统等原理，用于支持用Go复现C语言特性、保证产品稳定性、提高产品性能。
+&emsp;&emsp;1. 深入分析了Redis5.0源码的核心处理流程并实现，因为其涉及到很多操作系统、数据结构和网络编程相关知识所以这个过程需要开发人员具有较好的计算机体系基础知识作为支持。  
+&emsp;&emsp;2. 深入探究了Go语言的底层调度模型GPM和内存管理及类型系统等原理，解决与分析了项目与之相关的难点问题，并支持用Go复现C语言特性、保证产品稳定性、提高产品性能。
 + **金蝶天燕负载均衡器&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2020.08~2021.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
 &emsp;&emsp;金蝶天燕负载均衡器是为了国产化信创产业的发展基于APISIX开发的一款流量网关产品。支持x86、arm架构主流国产Linux操作系统下负载均衡器的全自动化离线部署与管理，内置了自动化的高可用高并发集群部署功能，支持多种流量管理场景下插件的定制化开发。  
 **官网**：https://www.apusic.com/list-282.html  
 **主要技术**：Go、Shell、Lua、Gin、APISIX、Openresty、Nginx、ETCD、LVS、Keepalived等  
 **主要负责事项**：  
-&emsp;&emsp;1. 产品包多实例管控台的开发，管控台实现了对服务器的管理、产品包的部署启停及状态监控、多节点负载均衡器的流量监控。  
+&emsp;&emsp;1. 产品包多实例管控台后端系统的技术框架选型、设计与开发，管控台实现了对服务器的管理、产品包的部署启停及状态监控、多节点负载均衡器的流量监控。  
 &emsp;&emsp;2. 高可用高并发集群部署方案的研究与自动化。  
 &emsp;&emsp;3. 适配x86、arm架构主流国产Linux操作系统，编写离线部署与安装代码与脚本。  
 **主要工作成果与难点攻关**：  
