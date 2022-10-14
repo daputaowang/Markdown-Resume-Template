@@ -36,8 +36,8 @@
 * 了解Docker，了解Docker实现机制，了解Dockerfile，了解Kubernetes，了解gRPC
 ## **项目经历**
 ***
-+ **金蝶天燕缓存数据库&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
-&emsp;&emsp;金蝶天燕缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。  
++ **金蝶天燕分布式缓存数据库&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021.07~2022.09&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;后端设计及开发**  
+&emsp;&emsp;金蝶天燕分布式缓存数据库是为了国产化信创产业的发展使用Go语言对标Redis5.0完全自研的工业级缓存软件。性能比肩Redis5.0并实现了功能上的全覆盖。  
 **官网**：https://www.apusic.com/list-338.html&emsp;&emsp;&emsp;**主要技术**：Go、EventLoop、Epoll、Socket  
 **主要负责事项**：  
 &emsp;&emsp;1. Go语言重构Redis后端架构设计，技术预研与难点攻关。  
