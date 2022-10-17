@@ -34,8 +34,8 @@
 * 熟悉Linux，日常Linux下开发，熟悉常用命令与工具。了解Git
 * 熟悉常见的数据结构与算法、计算机组成原理、操作系统
 * 熟悉nginx的使用、了解lvs、keepalived
-* 了解Python语言、C语言、Shell语言
-* 了解微服务、gRPC
+* 了解C语言基础，可以流畅阅读大型开源项目。了解Python的使用，具备python项目开发能力
+* 了解微服务、gRPC。了解Shell，能完成较复杂的脚本编写
 * 了解Docker、Docker实现机制、会编写Dockerfile，了解Kubernetes
 ## **项目经历**
 ***
